@@ -1,0 +1,92 @@
+/* *{
+    background: url('https://source.unsplash.com/1600x1200/?computer');
+} */
+.box{
+    width: 460px;
+    margin: 30px auto;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    /* filter: drop-shadow(10px 10px 20px lightblue); */
+    box-shadow: 1px 2px 2px 2px lightblue;
+    border: none;
+}
+
+.img{
+    display: block;
+    height: 150px;
+    background-color: #eee;
+    text-align: center;
+    font-size: 70px;
+    line-height: 150px;
+    color: gray;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login-page{
+    width: 450px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    /* filter: drop-shadow(10px 10px 20px lightblue); */
+    box-shadow: 1px 2px 2px 2px lightblue;
+    border: none;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    margin-top: -10px;
+    /* padding: 12px; */
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#ff9b74,#f6d363);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    transition: all .3s ease;
+    &:hover {
+        opacity: .8;
+        }
+}
+
+/* Media Queries for responsiveness */
+
+
+@media only screen and (max-width: 760px) {
+    .Login-page{
+        width: 450px;
+        margin: 50px auto;
+    }
+    
+    .btn{
+        width: 100px;
+    }
+        }
+
+@media only screen and (max-width: 480px) {
+    .Login-page{
+        width: 300px;
+        margin: 20px;
+    }
+  
+    .btn{
+        width: 90px;
+    }
+ 
+}
